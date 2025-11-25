@@ -61,11 +61,11 @@ const Logo = ({ isMobile = false }) => (
                 whileTap={{ scale: 0.95 }}
             >
                 <Image
-                    src="/logo.png"
-                    width={2000}
-                    height={2000}
+                    src="/logo-new.png"
+                    width={150}
+                    height={150}
                     alt='logo'
-                    className={`${isMobile ? 'w-10 h-10' : 'w-12 h-12 sm:w-14 sm:h-14'} rounded-full`}
+                    // className={`${isMobile ? 'w-10 h-10' : 'w-12 h-12 sm:w-56 sm:h-56'} rounded-full`}
                 />
             </motion.div>
             <motion.span
@@ -74,7 +74,7 @@ const Logo = ({ isMobile = false }) => (
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
             >
-                <span className="hidden sm:inline">{config.developer.name} | Devxora</span>
+                <span className="hidden sm:inline">{config.developer.name}</span>
                 {/* <span className="sm:hidden">{config.developer.name}</span> */}
             </motion.span>
         </Link>

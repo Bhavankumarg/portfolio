@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { HiCode, HiArrowRight } from 'react-icons/hi';
-import { config } from '@/config';
-import Link from 'next/link';
-import { BackgroundPresets } from '@/components/ui/background-effects';
-import { motion } from 'framer-motion';
-import SkillsShowcase from './SkillsShowcase';
+"use client";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { HiCode, HiArrowRight } from "react-icons/hi";
+import { config } from "@/config";
+import Link from "next/link";
+import { BackgroundPresets } from "@/components/ui/background-effects";
+import { motion } from "framer-motion";
+import SkillsShowcase from "./SkillsShowcase";
 
 const containerAnimation = {
   hidden: { opacity: 0 },
@@ -15,9 +15,9 @@ const containerAnimation = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.3
-    }
-  }
+      delayChildren: 0.3,
+    },
+  },
 };
 
 const itemAnimation = {
@@ -27,9 +27,9 @@ const itemAnimation = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const textAnimation = {
@@ -39,9 +39,9 @@ const textAnimation = {
     x: 0,
     transition: {
       duration: 0.5,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const HeroSection = () => {
@@ -55,7 +55,7 @@ const HeroSection = () => {
           initial="hidden"
           animate="show"
           className="max-w-3xl mx-auto text-center space-y-8 relative"
-        >
+      >
           <motion.div
             variants={itemAnimation}
             className="inline-flex items-center space-x-2 bg-secondary/10 border-[1.8px] border-zinc-900/70 px-4 py-2 rounded-full text-primary backdrop-blur-sm"
@@ -79,7 +79,8 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-white/60 text-2xl md:text-4xl"
               >
-I build web that builds brands.              </motion.span>
+                I build web that builds brands.{" "}
+              </motion.span>
             </motion.h1>
           </div>
 
@@ -87,7 +88,8 @@ I build web that builds brands.              </motion.span>
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-           Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star.
+            Full-stack builder creating digital experiences that respect humans
+            and scale with clarity. Accessibility is my north star.
           </motion.p>
 
           <motion.div
@@ -105,8 +107,6 @@ I build web that builds brands.              </motion.span>
               </Button>
             </Link>
           </motion.div>
-
-     
 
           <motion.div
             initial={{ opacity: 0 }}

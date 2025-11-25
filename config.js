@@ -3,7 +3,7 @@ import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase } from "react-icons/hi"
 
 export const config = {
     developer: {
-        name: "Huzaif",
+        name: "Bhavan Kumar",
     },
     social: {
         github: "huzaifahmedz",
@@ -138,14 +138,14 @@ export const config = {
         {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
-            value: "@huzaifahmedz",
-            link: `https://github.com/huzaifahmedz`
+            value: "@Bhavankumar",
+            link: `https://github.com/Bhavankumarg`
         },
         {
             icon: <HiMail className="w-5 h-5" />,
             label: "Email",
-            value: "dev.huzaif@gmail.com",
-            link: "mailto:dev.huzaif@gmail.com"
+            value: "gbhavanbkr@gmail.com",
+            link: "mailto:gbhavanbkr@gmail.com"
         },
         {
             icon: <FaMapPin className="w-5 h-5" />,

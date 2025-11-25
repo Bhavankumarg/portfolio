@@ -15,7 +15,7 @@ const geistSans = localFont({
 });
 
 export const metadata = {
-  title: "Huzaif\'s Portfolio",
+  title: "Bhavan\'s Portfolio",
   icons:{
 icon: "/logo.png"
   },
