@@ -15,7 +15,7 @@ const ContactForm = ({ onSubmit }) => {
   } = useForm();
 
   const formRef = useRef();
-//   console.log(`env : ${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`)
+  // console.log(`env : ${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`)
 
   const onSubmitHandler = async (data) => {
     await onSubmit(data);
@@ -43,7 +43,7 @@ const ContactForm = ({ onSubmit }) => {
               id="name"
               type="text"
               name="name"
-              placeholder="Huzaif"
+              placeholder="Bhavan"
               className="rounded-lg border-primary/20 w-full"
             />
             {errors.name && (
@@ -68,7 +68,7 @@ const ContactForm = ({ onSubmit }) => {
               id="email"
               type="email"
               name="email"
-              placeholder="huzaif@example.com"
+              placeholder="Bhavan@example.com"
               className="rounded-lg border-primary/20 w-full"
             />
             {errors.email && (

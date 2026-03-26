@@ -6,7 +6,7 @@ export const config = {
         name: "Bhavan Kumar",
     },
     social: {
-        github: "huzaifahmedz",
+        github: "Bhavankumarg",
         discord: "#"
     },
     NAV_ITEMS: [
@@ -17,48 +17,57 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            description: "An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, suggest optimizations, and enforce coding standards. Features real-time collaboration, automated testing integration, and comprehensive security scanning.",
-            image: "/projects/project-1.webp",
-            technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL", "Docker"],
+            title: "iVistaz",
+            description: "Scale your brand with iVistaz, a performance-based digital marketing agency in Bangalore. We deliver measurable growth through tailored data-driven",
+            image: "/projects/ivistaz.png",
+            technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "REST API", "WordPress"],
             github: "#",
-            demo: "#"
+            demo: "https://ivistaz.com/"
         },
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            description: "A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools. Supports video conferencing, screen sharing, and export to multiple formats. Built for remote teams and educators.",
-            image: "/projects/project-2.webp",
-            technologies: ["TypeScript", "WebRTC", "Socket.io", "Canvas API", "Node.js", "Redis"],
+            title: "Nautilus Shipping",
+            description: "Nautilus Shipping has stood as a trusted partner in ship management services, driven by our commitment to reliability, performance, and sustainable ...",
+            image: "/projects/nautilus.png",
+            technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "REST API", "Wordpress"],
             github: "#",
-            demo: "#"
-        },
-        {
-            id: 3,
-            title: "Blockchain Voting System",
-            description: "A secure, transparent, and decentralized voting platform built on Ethereum. Features smart contract-based voting, anonymous ballots, real-time result tracking, and immutable audit trails. Ensures election integrity through cryptographic verification.",
-            image: "/projects/project-3.webp",
-            technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
-            github: "#",
-            demo: "#"
+            demo: "https://www.nautilusshipping.com/"
         },
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            description: "A comprehensive cloud management platform for monitoring, managing, and optimizing multi-cloud infrastructure. Features real-time metrics, cost analysis, automated scaling, and security compliance monitoring across AWS, Azure, and GCP.",
-            image: "/projects/project-4.webp",
-            technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform", "React"],
+            title: "Aims Institutes",
+            description: "Looking for the top colleges in Bangalore? AIMS is a trusted choice, ranked among the best business colleges and best hospitality colleges in Bangalore.",
+            image: "/projects/aims.png",
+            technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "REST API", "Wordpress"],
             github: "#",
-            demo: "#"
+            demo: "https://www.theaims.ac.in/"
         },
         {
             id: 5,
-            title: "Neural Network Visualizer",
-            description: "An interactive web application for visualizing, training, and experimenting with neural networks. Features drag-and-drop architecture builder, real-time training visualization, model comparison tools, and export capabilities for production deployment.",
-            image: "/projects/project-5.webp",
-            technologies: ["Python", "TensorFlow.js", "D3.js", "Next.js", "WebGL", "TypeScript"],
+            title: "Chartered Housing",
+            description: "For over thirty-six years, we've been building more than just homes; we've been creating a legacy of quality and trust. Our journey has been one of ...",
+            image: "/projects/chartered.svg",
+            technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "Wordpress"],
             github: "#",
-            demo: "#"
+            demo: "https://www.charteredhousing.com/"
+        },
+        {
+            id: 6,
+            title: "Ivory and Gold",
+            description: "Where sophistication meets artistry in a calm, curated space. Ivory & Gold is a unisex luxury salon where beauty is reimagined as a quiet ritual of care, craft",
+            image: "/projects/ivory.svg",
+            technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "Wordpress"],
+            github: "#",
+            demo: "https://www.ivoryandgold.in/"
+        },
+        {
+            id: 7,
+            title: "seslong",
+            description: "Seslong is a global trading house with operations and manufacturing strategically located across India, Hong Kong, China, enabling us to supply a diverse range",
+            image: "/projects/seslong.png",
+            technologies: ["Next.js", "React.js", "TailwindCSS", "Formspree"],
+            github: "#",
+            demo: "https://seslong.com/"
         }
  
     ],
@@ -77,18 +86,18 @@ export const config = {
                 { name: "Framer Motion", level: "Intermediate" }
             ]
         },
-        {
-            title: "Backend",
-            icon: <HiDatabase />,
-            description: "Server & Database",
-            bgClass: "bg-emerald-500/10",
-            iconClass: "text-emerald-500",
-            skills: [
-                { name: "Node.js", level: "Advanced", hot: true },
-                { name: "MongoDB", level: "Advanced" },
-                { name: "Express.js", level: "Advanced", hot: true }
-            ]
-        },
+        // {
+        //     title: "Backend",
+        //     icon: <HiDatabase />,
+        //     description: "Server & Database",
+        //     bgClass: "bg-emerald-500/10",
+        //     iconClass: "text-emerald-500",
+        //     skills: [
+        //         { name: "Node.js", level: "Advanced", hot: true },
+        //         { name: "MongoDB", level: "Advanced" },
+        //         { name: "Express.js", level: "Advanced", hot: true }
+        //     ]
+        // },
         {
             title: "Programs & Tools",
             icon: <HiCube />,
@@ -97,40 +106,43 @@ export const config = {
             iconClass: "text-orange-500",
             skills: [
                 { name: "VS Code", level: "Expert", hot: true },
-                { name: "Postman", level: "Advanced" },
-                { name: "Photoshop", level: "Intermediate" },
-                { name: "Git", level: "Advanced" }
+                { name: "Postman", level: "Beginner" },
+                // { name: "Photoshop", level: "Intermediate" },
+                { name: "GitHub", level: "Advanced" }
             ]
         }
     ],
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
-            location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
+            position: "Web Developer",
+            company: "iVistaz Ecom Serevices Pvt Ltd",
+            period: "Mar 2024 - Nov 2025",
+            location: "Bengaluru, Karnataka, India",
+            description: "Developed modern, responsive web applications with a strong focus on performance, scalability, and user experience. Worked with modern frontend technologies to build dynamic, high-quality interfaces and seamless user interactions.",
             responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
+                "Built responsive and interactive user interfaces using React.js and Next.js",
+                "Implemented modern UI/UX designs using Tailwind CSS",
+                "Integrated REST APIs and dynamic backend data for real-time content",
+                "Optimized application performance and page load speed",
+                "Ensured cross-browser compatibility and mobile responsiveness",
+                "Collaborated with design teams to deliver scalable features"
             ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "REST API"]
         },
         {
-            position: "Full Stack Developer",
-            company: "Tekisky",
-            period: "2023 - 2024",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+            position: "Web Development Intern",
+            company: "Dalztek Online Services India Pvt Ltd",
+            period: "Jun 2023 - Feb 2024",
+            location: "Bengaluru, Karnataka, India",
+            description: "Assisted in developing responsive web applications and websites while gaining hands-on experience in frontend development, API integration, and content management. Focused on building user-friendly interfaces and improving overall website functionality.",
             responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
+                "Developed responsive web pages using HTML, CSS, JavaScript, and WordPress",
+                "Implemented basic UI components and frontend features",
+                "Integrated WordPress REST APIs for dynamic content rendering",
+                "Ensured mobile responsiveness and cross-browser compatibility",
+                "Assisted in bug fixing, testing, and content updates"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+            technologies: ["HTML", "CSS", "JavaScript", "WordPress"]
         }
     ],
     contactInfo: [
