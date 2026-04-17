@@ -17,7 +17,7 @@ const geistSans = localFont({
 export const metadata = {
   title: "Bhavan\'s Portfolio",
   icons:{
-icon: "/logo.png"
+icon: "/new.png"
   },
   description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
   keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, C#, CSharp, React, Node.js, portfolio",
