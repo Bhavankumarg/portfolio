@@ -71,9 +71,12 @@ const HeroSection = () => {
             >
               <motion.span
                 variants={textAnimation}
-                className="block text-primary mb-2"
+                className="block mb-2"
               >
-                Hi, I'm {config.developer.name}
+                Hi, I'm{" "}
+                <span className="inline-block bg-clip-text text-transparent bg-[length:200%_auto] animate-shimmer bg-gradient-to-r from-white via-blue-200 to-white">
+                  {config.developer.name}
+                </span>
               </motion.span>
               <motion.span
                 variants={textAnimation}

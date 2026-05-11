@@ -43,18 +43,25 @@ const SkillCard = ({ skill, bgClass }) => {
     const gradientClass = {
         'bg-blue-500/10': 'from-blue-500/80 to-blue-500',
         'bg-emerald-500/10': 'from-emerald-500/80 to-emerald-500',
-        'bg-orange-500/10': 'from-orange-500/80 to-orange-500'
+        'bg-orange-500/10': 'from-orange-500/80 to-orange-500',
+        'bg-yellow-500/10': 'from-yellow-500/80 to-yellow-500'
     }[bgClass] || 'from-primary/80 to-primary';
 
     return (
         <motion.div
             variants={itemAnimation}
-            className="relative flex flex-col h-full"
+            whileHover={{ y: -3, scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="relative flex flex-col h-full group"
         >
             <div className="relative h-full p-4 rounded-xl border border-zinc-800/50
-                          hover:border-zinc-700/50 transition-all duration-300">
-                <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-base font-medium text-primary/90">
+                          hover:border-zinc-700 transition-all duration-300
+                          hover:shadow-[0_0_20px_rgba(255,255,255,0.06)] overflow-hidden">
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent shiny-sweep" />
+                </div>
+                <div className="flex items-center justify-between mb-3 relative z-10">
+                    <h3 className="text-base font-medium text-primary/90 group-hover:text-primary transition-colors">
                         {skill.name}
                     </h3>
                     {skill.hot && (
@@ -65,7 +72,7 @@ const SkillCard = ({ skill, bgClass }) => {
                     )}
                 </div>
 
-                <div className="h-1.5 bg-zinc-800/50 rounded-full overflow-hidden">
+                <div className="h-1.5 bg-zinc-800/50 rounded-full overflow-hidden relative z-10">
                     <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${levelPercentage}%` }}
@@ -75,7 +82,7 @@ const SkillCard = ({ skill, bgClass }) => {
                     />
                 </div>
 
-                <div className="mt-2 flex justify-between items-center text-xs">
+                <div className="mt-2 flex justify-between items-center text-xs relative z-10">
                     <span className="text-muted-foreground">Proficiency</span>
                     <span className="font-medium text-primary">{skill.level}</span>
                 </div>

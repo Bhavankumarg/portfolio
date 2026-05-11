@@ -86,18 +86,30 @@ export const config = {
                 { name: "Framer Motion", level: "Intermediate" }
             ]
         },
-        // {
-        //     title: "Backend",
-        //     icon: <HiDatabase />,
-        //     description: "Server & Database",
-        //     bgClass: "bg-emerald-500/10",
-        //     iconClass: "text-emerald-500",
-        //     skills: [
-        //         { name: "Node.js", level: "Advanced", hot: true },
-        //         { name: "MongoDB", level: "Advanced" },
-        //         { name: "Express.js", level: "Advanced", hot: true }
-        //     ]
-        // },
+        {
+            title: "Backend",
+            icon: <HiDatabase />,
+            description: "Server & Database",
+            bgClass: "bg-emerald-500/10",
+            iconClass: "text-emerald-500",
+            skills: [
+                { name: "Node.js", level: "Advanced", hot: true },
+                { name: "NestJS", level: "Intermediate", hot: true },
+                { name: "PostgreSQL", level: "Advanced" }
+            ]
+        },
+        {
+            title: "DevOps & Cloud",
+            icon: <HiCube />,
+            description: "Infrastructure & Deployment",
+            bgClass: "bg-yellow-500/10",
+            iconClass: "text-yellow-500",
+            skills: [
+                { name: "AWS", level: "Intermediate", hot: true },
+                { name: "Nginx", level: "Intermediate" },
+                { name: "Ubuntu", level: "Advanced" }
+            ]
+        },
         {
             title: "Programs & Tools",
             icon: <HiCube />,
@@ -106,13 +118,28 @@ export const config = {
             iconClass: "text-orange-500",
             skills: [
                 { name: "VS Code", level: "Expert", hot: true },
-                { name: "Postman", level: "Beginner" },
-                // { name: "Photoshop", level: "Intermediate" },
+                { name: "Postman", level: "Intermediate" },
                 { name: "GitHub", level: "Advanced" }
             ]
         }
     ],
     experiences: [
+        {
+            position: "Full-Stack Developer",
+            company: "Sai Shishir Tours",
+            period: "Apr 2026 - Present",
+            location: "Bengaluru, Karnataka, India",
+            description: "Building end-to-end web solutions for a growing travel business — owning architecture, backend APIs, frontend experiences, and cloud deployment. Driving full-stack development with a focus on performance, reliability, and scalable infrastructure.",
+            responsibilities: [
+                "Architected and built REST APIs using Node.js and NestJS",
+                "Designed and managed relational data models with PostgreSQL",
+                "Deployed and operated production services on AWS with Nginx reverse proxy on Ubuntu",
+                "Developed responsive frontends with Next.js, React, and TailwindCSS",
+                "Implemented CI/CD pipelines and zero-downtime deployment workflows",
+                "Optimized server performance, caching, and database queries for scale"
+            ],
+            technologies: ["Node.js", "NestJS", "PostgreSQL", "AWS", "Nginx", "Ubuntu", "Next.js", "React", "TailwindCSS"]
+        },
         {
             position: "Web Developer",
             company: "iVistaz Ecom Serevices Pvt Ltd",
